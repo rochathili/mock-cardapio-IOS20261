@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>O Quintal - Menu</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#352f2b",
+                        "surface-container-high": "#f1e6df",
+                        "on-secondary-container": "#5a682f",
+                        "surface": "#fff8f4",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#54433d",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#904c2f",
+                        "on-surface": "#1f1b17",
+                        "outline-variant": "#d9c2b9",
+                        "outline": "#86736c",
+                        "on-tertiary-fixed-variant": "#4c4634",
+                        "on-tertiary-fixed": "#201b0c",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#d9eaa3",
+                        "primary-fixed-dim": "#ffb598",
+                        "on-primary-fixed": "#370e00",
+                        "surface-container-low": "#fcf2ea",
+                        "surface-dim": "#e2d8d1",
+                        "secondary-container": "#d6e7a1",
+                        "on-primary-fixed-variant": "#73351a",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#ffb598",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#ce7e5d",
+                        "primary": "#904c2f",
+                        "tertiary": "#645e4b",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f9efe8",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#ebe1da",
+                        "surface-container-highest": "#ebe1da",
+                        "secondary-fixed-dim": "#bdce89",
+                        "on-primary-container": "#4f1b02",
+                        "background": "#fff8f4",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#ffdbce",
+                        "on-tertiary-container": "#302b1b",
+                        "on-secondary-fixed": "#161f00",
+                        "on-background": "#1f1b17",
+                        "tertiary-fixed": "#ece2c9",
+                        "secondary": "#56642b",
+                        "surface-container": "#f6ece5",
+                        "on-secondary-fixed-variant": "#3e4c16",
+                        "tertiary-container": "#9a927c",
+                        "surface-bright": "#fff8f4",
+                        "tertiary-fixed-dim": "#cfc6ae"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "64px",
+                        "gutter": "24px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "container-max": "1140px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "label-lg": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+    </style>
+</head>
+
+<body class="antialiased min-h-screen flex flex-col">
+    <!-- TopAppBar -->
+    <header
+        class="w-full sticky top-0 z-50 bg-[#FDFCFB] dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800">
+        <div
+            class="flex justify-between items-center max-w-[1140px] mx-auto px-8 w-full h-20 font-['Plus_Jakarta_Sans'] font-medium text-sm">
+            <div class="text-2xl font-bold text-[#CE7E5D] dark:text-[#E6A68A] tracking-tight">O Quintal</div>
+            <nav class="hidden md:flex gap-6 items-center">
+                <a class="text-[#CE7E5D] dark:text-[#E6A68A] font-bold border-b-2 border-[#CE7E5D] pb-1 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] transition-colors active:opacity-80 transition-all duration-200"
+                    href="#">Cardápio</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] transition-colors active:opacity-80 transition-all duration-200"
+                    href="#">Nossa História</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] transition-colors active:opacity-80 transition-all duration-200"
+                    href="#">Contato</a>
+            </nav>
+            <button
+                class="bg-[#CE7E5D] text-white px-4 py-2 rounded-full font-medium active:opacity-80 transition-all duration-200 hover:opacity-90">Interessado</button>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow max-w-[1140px] mx-auto px-6 py-12 w-full">
+        <!-- Hero Section -->
+        <section class="mb-16 text-center max-w-2xl mx-auto">
+            <h1 class="font-headline-xl text-on-surface mb-4 text-[#CE7E5D]">Sabores da Nossa Terra</h1>
+            <p class="font-body-lg text-on-surface-variant">Ingredientes frescos cultivados por produtores locais,
+                preparados com carinho para celebrar a simplicidade e a conexão em cada prato.</p>
+        </section>
+        <!-- Menu Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Dish 1 -->
+            <article
+                class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:border-primary-container transition-colors flex flex-col group cursor-pointer">
+                <div class="h-48 bg-surface-variant overflow-hidden">
+                    <img alt="Salada da Horta"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="A beautifully plated fresh garden salad in a handmade ceramic bowl. The scene is brightly lit with natural, warm sunlight creating soft shadows, emphasizing a rustic, organic aesthetic. The color palette is earthy with vibrant greens of fresh lettuce and bright pops of red tomatoes. The mood is fresh, wholesome, and inviting, fitting a local farm-to-table concept."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeNcIMonU28fPBf0TDAZ01e5Kqin6rJmDCJPvXhsOWSmP6aAML0QKzfzf9_liOOjygsQqWRJq3QxO1FnXqYBo_3DMHOq03jujuVWzBnJG2rTtDQ1yku4Qgmj3CsSylaV1IValReVlIcKg4FDDcgRdaQtApch2kELHt_7ztmbUiNHkrt4q5K36g7qeHC-DcHhvD4F6_JYCNZ9ykf4IO_CcuXhRnWq1MWr9Gr1j445UzsWlE8ovY2v9iFsyDSRUjEo18zLqF74kY0cM" />
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="font-headline-md text-on-surface">Salada da Horta</h2>
+                        <span class="font-label-lg text-primary bg-primary-container/10 px-3 py-1 rounded-full">R$
+                            32</span>
+                    </div>
+                    <p class="font-body-md text-on-surface-variant mb-4 flex-grow">Folhas verdes crocantes, tomates
+                        cereja assados, nozes pecã e um vinagrete de mel silvestre local.</p>
+                    <div class="flex gap-2">
+                        <span
+                            class="bg-secondary-container text-on-secondary-container font-label-sm px-2 py-1 rounded-full">Orgânico</span>
+                        <span
+                            class="bg-secondary-container text-on-secondary-container font-label-sm px-2 py-1 rounded-full">Vegetariano</span>
+                    </div>
+                </div>
+            </article>
+            <!-- Dish 2 -->
+            <article
+                class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:border-primary-container transition-colors flex flex-col group cursor-pointer">
+                <div class="h-48 bg-surface-variant overflow-hidden">
+                    <img alt="Sopa de Raízes"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="A comforting, steaming bowl of creamy root vegetable soup served in an artisan, slightly imperfect clay bowl. The lighting is warm and moody, casting gentle shadows across a worn wooden table. The aesthetic is deeply rustic and tactile, featuring muted earthy tones of ochre and cream. The scene evokes a cozy, nurturing feeling perfect for a chilly neighborhood evening."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFIJeReZaOnmaGXbJserQmijnFxn0CHGMZDORR5XSbGP1URIC9072TR21qJnoXqyQr4fgkcXi6bpsEuFtypRAJ6gL0dNVxaLWTePNmxmICYAf7Us9nxq-zL1zINxI2W9NMlr70GH7mkZuP__pzne658JG29MF-X9eEU5cPltGH8XO6nfJyjHUSjBSNjUaED3kU3MdEJAT2YBAzZs1lfIeq_fXThknLr4y9g7W_1Fs32VBm4hrlJM6_9K4ljiURusTF6IszuANEcp4" />
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="font-headline-md text-on-surface">Sopa de Raízes</h2>
+                        <span class="font-label-lg text-primary bg-primary-container/10 px-3 py-1 rounded-full">R$
+                            28</span>
+                    </div>
+                    <p class="font-body-md text-on-surface-variant mb-4 flex-grow">Creme aveludado de abóbora cabotiá e
+                        batata doce, finalizado com sementes de girassol tostadas.</p>
+                    <div class="flex gap-2">
+                        <span
+                            class="bg-secondary-container text-on-secondary-container font-label-sm px-2 py-1 rounded-full">Vegano</span>
+                    </div>
+                </div>
+            </article>
+            <!-- Dish 3 -->
+            <article
+                class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:border-primary-container transition-colors flex flex-col group cursor-pointer">
+                <div class="h-48 bg-surface-variant overflow-hidden">
+                    <img alt="Costela de Panela"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="A rich, hearty portion of slow-cooked braised short ribs served over a bed of rustic polenta on a simple, white stoneware plate. The lighting highlights the glossy, savory glaze of the meat against the creamy base. The surrounding environment is softly out of focus, suggesting a bustling, warm local kitchen. The mood is comforting, robust, and deeply satisfying with a warm, amber-toned palette."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA94dgMtce9M8zSA2UveXaQSFYCaQbWKK3wZM13zlm_HwZTTUS5ZvlxCvd4mPaFzRf0DS5yt4o4SdSLLQH7Po1XqztdLECZOYQbvLxRZbgBUDFPvK9ue8SmZzB1YubiGUN9SxuMV0rFDZOtofZiDUNBo4l2TW8qlr9ORxI35GaTGwT2LkO9SE-M5KwnmRufYap1so3aNnrTNbcAEQ_KhkmHITjl7u8uLRG_sh7jnCrsmI2X8Va-auVgkAnGIyHvP_5T3zeWei9yYPw" />
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="font-headline-md text-on-surface">Costela de Panela</h2>
+                        <span class="font-label-lg text-primary bg-primary-container/10 px-3 py-1 rounded-full">R$
+                            65</span>
+                    </div>
+                    <p class="font-body-md text-on-surface-variant mb-4 flex-grow">Costela bovina de pasto cozida
+                        lentamente por 12 horas, acompanhada de purê rústico de mandioca.</p>
+                    <div class="flex gap-2">
+                        <span
+                            class="bg-secondary-container text-on-secondary-container font-label-sm px-2 py-1 rounded-full">Fazenda
+                            Local</span>
+                    </div>
+                </div>
+            </article>
+            <!-- Dish 4 -->
+            <article
+                class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:border-primary-container transition-colors flex flex-col group cursor-pointer">
+                <div class="h-48 bg-surface-variant overflow-hidden">
+                    <img alt="Frango Caipira"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="A comforting plate of slow-roasted farm chicken, beautifully golden brown, served with roasted root vegetables. The setting is an old, scarred wooden table bathed in soft, diffused afternoon light. The aesthetic is organic and home-style, featuring warm hues of gold, brown, and soft green herbs. The mood is familial, nostalgic, and deeply connected to traditional, slow cooking methods."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdVQt3_zuyEog6SdQYMFEXFAPEjpZBcZwl3a8EJcHr8Ayd5egof6Fh4CTgZiDhxdy-g_xeeU9_SQNXIPM1oODvPMruHnCF89SpHYgeo7rJuvVSAZSZo2WP77XRuXpcKXBxb5o3KcEBR5q9q3HYB0Zr287BJg9nEsA7eNtlY6jLcL7AgDic3g7nqOG-_kksEwEemge4YEgTjtl95bFcFtQmftHDzVgBXuGBCpgdOH1bn-lZFxL1oijUp4MT6-oJw9CEIcN_Ls8l4FM" />
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="font-headline-md text-on-surface">Frango Caipira</h2>
+                        <span class="font-label-lg text-primary bg-primary-container/10 px-3 py-1 rounded-full">R$
+                            54</span>
+                    </div>
+                    <p class="font-body-md text-on-surface-variant mb-4 flex-grow">Frango orgânico assado no forno a
+                        lenha, servido com legumes da estação chamuscados e ervas frescas.</p>
+                    <div class="flex gap-2">
+                        <span
+                            class="bg-secondary-container text-on-secondary-container font-label-sm px-2 py-1 rounded-full">Favorito</span>
+                    </div>
+                </div>
+            </article>
+            <!-- Dish 5 -->
+            <article
+                class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:border-primary-container transition-colors flex flex-col group cursor-pointer">
+                <div class="h-48 bg-surface-variant overflow-hidden">
+                    <img alt="Risoto de Cogumelos"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="A delicate portion of wild mushroom risotto presented in a shallow, matte ceramic bowl. The lighting is low and intimate, emphasizing the creamy texture of the rice and the earthy tones of the mushrooms. The visual style is refined yet rustic minimalism, with a subtle sprinkle of fresh green herbs for contrast. The atmosphere is quiet, elegant, and grounded in natural ingredients."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD0nPHUQjdbzQcZaMmnJXdXzOlIPjGVkK9YVDURSHkocRcKCe8tOJGatWs_sh_ETgjAyaClTLhDBxIQVZJX_4QA5k7yMfcs5Uw8HhahTw6FHS7cpCL25oD7yhItm6-vZGLOrV_ng3bvFLCAmXifp-nAig_Nz4CMf8oNPUB8WTHQaEOKTgB_NIb3oDD38_Ykw45fQgF0vaz_9ISPRwl3vSUPg7xh8ue-fCzblkUwWbQwwTNEZAfM9v-9fDyEDQLhm5mmin4uixgAYU" />
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="font-headline-md text-on-surface">Risoto do Bosque</h2>
+                        <span class="font-label-lg text-primary bg-primary-container/10 px-3 py-1 rounded-full">R$
+                            58</span>
+                    </div>
+                    <p class="font-body-md text-on-surface-variant mb-4 flex-grow">Arroz arbóreo cremoso com um mix de
+                        cogumelos selvagens colhidos na região, finalizado com azeite trufado.</p>
+                    <div class="flex gap-2">
+                        <span
+                            class="bg-secondary-container text-on-secondary-container font-label-sm px-2 py-1 rounded-full">Vegetariano</span>
+                    </div>
+                </div>
+            </article>
+            <!-- Dish 6 -->
+            <article
+                class="bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant hover:border-primary-container transition-colors flex flex-col group cursor-pointer">
+                <div class="h-48 bg-surface-variant overflow-hidden">
+                    <img alt="Torta Rústica de Maçã"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        data-alt="A slice of rustic, hand-formed apple galette resting on a distressed metal baking sheet. The crust is golden and flaky, with caramelized apples bubbling through. Warm, golden hour light streams across the scene, creating a sense of late afternoon comfort. The aesthetic is unpretentious and tactile, using tones of amber, cinnamon, and toasted brown. The mood is sweet, nostalgic, and inviting."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGGBwFeGIJszAoxkX9i0DUu5W_fpiqMD0L6CfxpGhZOcQ_zQYZdEU7k-jMSR9wB5h9TRwk1b00Bw8aZXZid0Ooo3WNNOHfFaHijMflx9fDbIn71REwe4i4rqGZ_eW1zfoNFy7ddR7BjS2zEdQf3rpHbaLCX49sGBQvPrRaka9y5ezT935eJ781THrdibyH2F9iNxNqZcKeo-TcQxUhBUF1lNB9t0esK0vuo8cufZplxVXN0LijodJJlVYTj8CJyXWjwaFAgGdRaf4" />
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h2 class="font-headline-md text-on-surface">Torta Rústica</h2>
+                        <span class="font-label-lg text-primary bg-primary-container/10 px-3 py-1 rounded-full">R$
+                            24</span>
+                    </div>
+                    <p class="font-body-md text-on-surface-variant mb-4 flex-grow">Massa folhada artesanal recheada com
+                        maçãs do pomar vizinho, servida morna com creme fresco.</p>
+                    <div class="flex gap-2">
+                        <span
+                            class="bg-secondary-container text-on-secondary-container font-label-sm px-2 py-1 rounded-full">Sobremesa</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full border-t border-stone-200 dark:border-stone-800 mt-12 bg-[#F7F3F0] dark:bg-stone-900 font-['Plus_Jakarta_Sans'] text-sm leading-relaxed">
+        <div class="max-w-[1140px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-start gap-8">
+            <div class="text-lg font-bold text-stone-800 dark:text-stone-200">O Quintal</div>
+            <div class="flex flex-col md:flex-row gap-6 items-center">
+                <a class="text-stone-500 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] underline decoration-stone-300 transition-all duration-300"
+                    href="#">Nossos Produtores</a>
+                <a class="text-stone-500 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] underline decoration-stone-300 transition-all duration-300"
+                    href="#">Como Ajudar</a>
+                <a class="text-stone-500 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] underline decoration-stone-300 transition-all duration-300"
+                    href="#">Transparência</a>
+                <a class="text-stone-500 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] underline decoration-stone-300 transition-all duration-300"
+                    href="#">Privacidade</a>
+            </div>
+            <div class="text-stone-500 dark:text-stone-400">© 2024 O Quintal - Cultivado com carinho pela nossa
+                comunidade.</div>
+        </div>
+    </footer>
+</body>
+
+</html>

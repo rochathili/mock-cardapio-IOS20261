@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Detalhes do Prato - O Quintal</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <style>
+                .material-symbols-outlined {
+                        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+                }
+        </style>
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "tertiary-fixed": "#ece2c9",
+                                                "primary-fixed-dim": "#ffb598",
+                                                "tertiary-fixed-dim": "#cfc6ae",
+                                                "tertiary-container": "#9a927c",
+                                                "surface-dim": "#e2d8d1",
+                                                "on-secondary-fixed": "#161f00",
+                                                "on-surface-variant": "#54433d",
+                                                "on-secondary-container": "#5a682f",
+                                                "surface-container-highest": "#ebe1da",
+                                                "primary-fixed": "#ffdbce",
+                                                "on-primary-container": "#4f1b02",
+                                                "on-surface": "#1f1b17",
+                                                "primary-container": "#ce7e5d",
+                                                "secondary": "#56642b",
+                                                "on-secondary": "#ffffff",
+                                                "outline-variant": "#d9c2b9",
+                                                "surface": "#fff8f4",
+                                                "secondary-fixed-dim": "#bdce89",
+                                                "secondary-container": "#d6e7a1",
+                                                "tertiary": "#645e4b",
+                                                "on-tertiary-fixed": "#201b0c",
+                                                "surface-container-low": "#fcf2ea",
+                                                "on-secondary-fixed-variant": "#3e4c16",
+                                                "on-tertiary-container": "#302b1b",
+                                                "on-primary-fixed-variant": "#73351a",
+                                                "primary": "#904c2f",
+                                                "surface-variant": "#ebe1da",
+                                                "on-primary": "#ffffff",
+                                                "inverse-primary": "#ffb598",
+                                                "error-container": "#ffdad6",
+                                                "background": "#fff8f4",
+                                                "surface-container-lowest": "#ffffff",
+                                                "surface-tint": "#904c2f",
+                                                "surface-container-high": "#f1e6df",
+                                                "inverse-on-surface": "#f9efe8",
+                                                "outline": "#86736c",
+                                                "surface-container": "#f6ece5",
+                                                "on-error-container": "#93000a",
+                                                "inverse-surface": "#352f2b",
+                                                "on-error": "#ffffff",
+                                                "secondary-fixed": "#d9eaa3",
+                                                "on-tertiary": "#ffffff",
+                                                "on-background": "#1f1b17",
+                                                "on-tertiary-fixed-variant": "#4c4634",
+                                                "surface-bright": "#fff8f4",
+                                                "on-primary-fixed": "#370e00",
+                                                "error": "#ba1a1a"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.25rem",
+                                                "lg": "0.5rem",
+                                                "xl": "0.75rem",
+                                                "full": "9999px"
+                                        },
+                                        "spacing": {
+                                                "lg": "48px",
+                                                "sm": "12px",
+                                                "container-max": "1140px",
+                                                "xs": "4px",
+                                                "xl": "64px",
+                                                "md": "24px",
+                                                "base": "8px",
+                                                "gutter": "24px"
+                                        },
+                                        "fontFamily": {
+                                                "headline-xl": [
+                                                        "Plus Jakarta Sans"
+                                                ],
+                                                "headline-md": [
+                                                        "Plus Jakarta Sans"
+                                                ],
+                                                "label-sm": [
+                                                        "Plus Jakarta Sans"
+                                                ],
+                                                "label-lg": [
+                                                        "Plus Jakarta Sans"
+                                                ],
+                                                "headline-lg": [
+                                                        "Plus Jakarta Sans"
+                                                ],
+                                                "body-lg": [
+                                                        "Plus Jakarta Sans"
+                                                ],
+                                                "body-md": [
+                                                        "Plus Jakarta Sans"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "headline-xl": [
+                                                        "40px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "headline-md": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "1.4",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "label-lg": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "1.2",
+                                                                "letterSpacing": "0.01em",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "headline-lg": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "1.3",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "1.6",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "1.6",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ]
+                                        }
+                                },
+                        },
+                }
+        </script>
+</head>
+
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+        <header
+                class="w-full sticky top-0 z-50 bg-[#FDFCFB] dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800">
+                <div class="flex justify-between items-center max-w-[1140px] mx-auto px-8 w-full h-20">
+                        <div class="text-2xl font-bold text-[#CE7E5D] dark:text-[#E6A68A] tracking-tight">
+                                O Quintal
+                        </div>
+                        <nav class="hidden md:flex gap-6 items-center">
+                                <a class="text-stone-600 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] transition-colors font-['Plus_Jakarta_Sans'] font-medium text-sm active:opacity-80 transition-all duration-200"
+                                        href="#">Cardápio</a>
+                                <a class="text-stone-600 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] transition-colors font-['Plus_Jakarta_Sans'] font-medium text-sm active:opacity-80 transition-all duration-200"
+                                        href="#">Nossa História</a>
+                                <a class="text-stone-600 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] transition-colors font-['Plus_Jakarta_Sans'] font-medium text-sm active:opacity-80 transition-all duration-200"
+                                        href="#">Contato</a>
+                        </nav>
+                        <button
+                                class="bg-[#CE7E5D] text-white px-4 py-2 rounded-full font-label-lg hover:bg-opacity-90 transition-all focus:ring-2 focus:ring-offset-2 focus:ring-[#CE7E5D]">
+                                Interessado
+                        </button>
+                </div>
+        </header>
+        <!-- Top Navigation Suppressed due to task-focused linear flow (Dish Detail Page) -->
+        <main class="flex-grow w-full max-w-container-max mx-auto px-6 py-lg">
+                <a class="inline-flex items-center gap-sm text-primary hover:text-primary-container transition-colors mb-md group font-label-lg text-label-lg"
+                        href="#"><span
+                                class="material-symbols-outlined text-lg group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                        Voltar ao cardápio</a>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-xl">
+                        <!-- Image Section -->
+                        <div
+                                class="relative w-full aspect-square md:aspect-[4/5] rounded-xl overflow-hidden bg-surface-variant outline outline-1 outline-outline-variant">
+                                <img alt="Fresh local salad dish" class="w-full h-full object-cover object-center"
+                                        data-alt="A close-up, beautifully styled photograph of a fresh, healthy salad bowl sitting on a rustic wooden table. The lighting is soft, warm, and natural, creating a welcoming and organic minimalist aesthetic. The color palette features earthy greens, vibrant reds, and soft cream tones, perfectly complementing the tactile warmth of the overall UI. The mood is calm and appetizing."
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv0YhI5Q9C89PIxiMQWPOI_AJQYc9zS2_jTV-ZV8KN7quQ_s7Wm_gKprvrndFiaZoY2mNnd4U41dlzugowFWlgeplgz2lVqTEfHLQfM1HRF59c511G0gYsU27wcYIQO-NwZMpxDSfnl09WadxKk-8nmCcdgy9LN73si18tsuOIE5S4dSCq3At9GuiAo9zCsLH9ntkHlFD7TzkrAPVqOV_CbBTsoDReSxOqxfIt0xmodcHag9dbf12hxMHCUymqBMliNRrK35UU9ec" />
+                        </div>
+                        <!-- Details Section -->
+                        <div class="flex flex-col pt-md">
+                                <div class="flex items-center gap-sm mb-md">
+                                        <span
+                                                class="inline-flex items-center gap-xs px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm"><span
+                                                        class="material-symbols-outlined text-sm">eco</span>
+                                                Cultivado Localmente</span>
+                                </div>
+                                <h1 class="font-headline-xl text-headline-xl text-on-surface mb-sm">Salada da Horta</h1>
+                                <p class="font-headline-md text-headline-md text-primary mb-lg">R$ 38</p>
+                                <div class="mb-lg">
+                                        <h2 class="font-headline-md text-headline-md text-on-surface-variant mb-md">
+                                                Ingredientes</h2>
+                                        <ul class="space-y-sm">
+                                                <li
+                                                        class="flex items-start gap-md py-sm border-b border-outline-variant last:border-b-0">
+                                                        <span
+                                                                class="material-symbols-outlined text-tertiary">grass</span>
+                                                        <span class="font-body-md text-body-md text-on-background">Folhas
+                                                                orgânicas locais (Alface, Rúcula, Espinafre)</span>
+                                                </li>
+                                                <li
+                                                        class="flex items-start gap-md py-sm border-b border-outline-variant last:border-b-0">
+                                                        <span
+                                                                class="material-symbols-outlined text-tertiary">nutrition</span>
+                                                        <span class="font-body-md text-body-md text-on-background">Tomates
+                                                                cereja do Sítio do Sol</span>
+                                                </li>
+                                                <li
+                                                        class="flex items-start gap-md py-sm border-b border-outline-variant last:border-b-0">
+                                                        <span class="material-symbols-outlined text-tertiary">egg</span>
+                                                        <span class="font-body-md text-body-md text-on-background">Ovos
+                                                                caipiras cozidos</span>
+                                                </li>
+                                                <li
+                                                        class="flex items-start gap-md py-sm border-b border-outline-variant last:border-b-0">
+                                                        <span
+                                                                class="material-symbols-outlined text-tertiary">water_drop</span>
+                                                        <span class="font-body-md text-body-md text-on-background">Molho
+                                                                de limão e azeite artesanal</span>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div
+                                        class="bg-surface-container p-lg rounded-lg outline outline-1 outline-outline-variant mt-auto">
+                                        <h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Gostou deste
+                                                prato?</h3>
+                                        <p class="font-body-md text-body-md text-on-surface-variant mb-md">Este prato
+                                                está disponível hoje em nosso espaço comunitário. Venha nos visitar para
+                                                saboreá-lo fresquinho.</p>
+                                        <a class="inline-flex items-center justify-center w-full px-6 py-3 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg hover:bg-surface-tint transition-colors"
+                                                href="#">Contato</a>
+                                </div>
+                        </div>
+                </div>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-[#F7F3F0] dark:bg-stone-900 w-full border-t border-stone-200 dark:border-stone-800 mt-12">
+                <div
+                        class="max-w-[1140px] mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-start gap-8">
+                        <div class="text-lg font-bold text-stone-800 dark:text-stone-200">
+                                O Quintal
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-6">
+                                <a class="font-['Plus_Jakarta_Sans'] text-sm leading-relaxed text-stone-500 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] underline decoration-stone-300 transition-all duration-300 focus:ring-2 focus:ring-[#CE7E5D]"
+                                        href="#">Nossos Produtores</a>
+                                <a class="font-['Plus_Jakarta_Sans'] text-sm leading-relaxed text-stone-500 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] underline decoration-stone-300 transition-all duration-300 focus:ring-2 focus:ring-[#CE7E5D]"
+                                        href="#">Como Ajudar</a>
+                                <a class="font-['Plus_Jakarta_Sans'] text-sm leading-relaxed text-stone-500 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] underline decoration-stone-300 transition-all duration-300 focus:ring-2 focus:ring-[#CE7E5D]"
+                                        href="#">Transparência</a>
+                                <a class="font-['Plus_Jakarta_Sans'] text-sm leading-relaxed text-stone-500 dark:text-stone-400 hover:text-[#CE7E5D] dark:hover:text-[#E6A68A] underline decoration-stone-300 transition-all duration-300 focus:ring-2 focus:ring-[#CE7E5D]"
+                                        href="#">Privacidade</a>
+                        </div>
+                        <div
+                                class="font-['Plus_Jakarta_Sans'] text-sm leading-relaxed text-stone-500 dark:text-stone-400">
+                                © 2024 O Quintal - Cultivado com carinho pela nossa comunidade.
+                        </div>
+                </div>
+        </footer>
+</body>
+
+</html>
